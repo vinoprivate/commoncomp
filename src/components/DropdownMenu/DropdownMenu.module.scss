@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  .required {
+    color: $accent-color;
+  }
+
+  .dropdownHeader {
+    background: $background-color;
+    border: 1px solid $border-color;
+    padding: 10px;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: $shadow;
+  }
+
+  .dropdownList {
+    background: white;
+    position: absolute;
+    width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    box-shadow: $shadow;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    max-height: 150px;
+    overflow-y: auto;
+
+    li {
+      padding: 10px;
+      cursor: pointer;
+      
+      &:hover {
+        background: $hover-color;
+        color: white;
+      }
+    }
+  }
+}

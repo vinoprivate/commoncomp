@@ -1,0 +1,57 @@
+.text-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 400px; /* Limits width for better UX */
+}
+
+.text-input-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-input-field {
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.text-input-field:hover {
+  border-color: #888;
+}
+
+/* Focus effect */
+.text-input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Disabled state */
+.text-input-field:disabled {
+  background-color: #f2f2f2;
+  color: #777;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
+
+/* Placeholder styling */
+.text-input-field::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Error styling (Optional - if you want to add error states later) */
+.text-input-field.error {
+  border-color: red;
+  background-color: #ffe5e5;
+}
